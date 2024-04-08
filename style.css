@@ -1,0 +1,24 @@
+body {
+         background-color: black;
+         text-align: center;
+}
+input{
+         
+         margin-top: 100px;
+         /* color: white; */
+         text-align: center;
+         width: 150px;
+         height: 50px;
+         border-radius: 40px;
+         border-color: goldenrod;
+         color: brown;
+}
+.output{
+         color: white;
+         text-align: center;
+         
+}
+.r{
+         margin:300px ;
+         /* padding: 100px; ; */
+}

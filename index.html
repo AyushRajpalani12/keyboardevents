@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Key Board Events</title>
+         <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <input type="text" name="" id="myinput" placeholder="Type Something">
+      <div class="output">
+         <p class="keyboard">key pressed </p>
+         <p class="keycode">key  code</p>
+         <p class="charCode">char codeAt </p>
+         <p class="eventtype">event type </p>
+         <h1 class="r">Made By A.R TECH</h1>
+      </div>
+      <script>
+         const handlekeypress = (event) => {
+                            console.log(event)
+                            console.log("Keyboard:" , event.key)
+                            console.log("KeyCode:" , event.code)
+                            console.log("KeyType:" , event.type)
+
+                  document.querySelector(".keyboard").textContent =` keyboard: ${ event.key}` ;
+                  document.querySelector(".keycode").textContent =` keycode: ${ event.code}` ;
+                  document.querySelector(".eventtype").textContent =` eventcode: ${ event.type}` ;
+                  document.querySelector(".charCode").textContent =` charCode: ${ event.key.charCodeAt(0)}` ;
+         };
+
+         // }
+                  // let mybutton = document.getElementById("mybutton");
+                  // let rect = document.querySelector (".rectangle");
+
+                  // const handleMouseEvents = () => {
+                  //          console.log("click")
+                  //          rect.style.backgroundColor = "#f5ee62"
+                  // }
+                           var myinput = document.getElementById("myinput");
+                           myinput.addEventListener('keydown' , handlekeypress)
+         </script>
+         <!-- <html</html> -->
+       
+</body>
+</html>
